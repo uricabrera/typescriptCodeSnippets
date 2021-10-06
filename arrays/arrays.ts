@@ -22,3 +22,9 @@ const myCar = carMakers.pop();
 carMakers.map((car:string):string => {
     return car.toUpperCase();
 })
+
+// Flexible types
+
+const importantDates: (string | Date)[] = [new Date(),"2030-10-10"];
+importantDates.push("qjwowqjejo");
+// importantDates.push(100) ----> Would give an error
